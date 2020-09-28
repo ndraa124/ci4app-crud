@@ -37,7 +37,7 @@ class Home extends BaseController
 		];
 
 		if ($search !== "") {
-			$list = $this->model->ajaxGetTotalSearch($search, $start, $length);
+			$list = $this->model->ajaxGetDataSearch($search, $start, $length);
 		} else {
 			$list = $this->model->ajaxGetData($start, $length);
 		}
